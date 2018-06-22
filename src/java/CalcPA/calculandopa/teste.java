@@ -1,0 +1,93 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package CalcPA.calculandopa;
+
+import javax.faces.bean.ManagedBean;
+
+/**
+ *
+ * @author alex
+ */
+@ManagedBean
+public class teste {
+
+    private int r1 = 0;
+    private int r2 = 0;
+    private int r3 = 0;
+    private int r = 0;
+    private int a1 = 0;
+    private int n = 0;
+    private int aN = 0;
+
+    public int getR1() {
+        return r1;
+    }
+
+    public void setR1(int r1) {
+        this.r1 = r1;
+    }
+
+    public int getR2() {
+        return r2;
+    }
+
+    public void setR2(int r2) {
+        this.r2 = r2;
+    }
+
+    public int getR3() {
+        return r3;
+    }
+
+    public void setR3(int r3) {
+        this.r3 = r3;
+    }
+
+    public int getR() {
+        return r;
+    }
+
+    public void setR(int r) {
+        this.r = r;
+    }
+
+    public int getA1() {
+        return a1;
+    }
+
+    public void setA1(int a1) {
+        this.a1 = a1;
+    }
+
+    public int getN() {
+        return n;
+    }
+
+    public void setN(int n) {
+        this.n = n;
+    }
+
+    public int getaN() {
+        return aN;
+    }
+
+    public void setaN(int aN) {
+        this.aN = aN;
+    }
+
+    public void calcular() {
+
+        r = r2 - r1;
+
+        getR1();
+
+        getN();
+
+        aN = getR1() + (getN() - 1) * r;
+
+    }
+
+}
