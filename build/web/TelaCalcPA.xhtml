@@ -35,7 +35,7 @@
                                 <h:outputText style="font-family:Agency FB; font-size:18px;" value="Razão 2:" />
                                 <p:inputText value="#{teste.r2}" style="font-family:Agency FB; width:250px; font-size:18px;" required="true"></p:inputText>                                                        
                                 <h:outputText style="font-family:Agency FB; font-size:18px;" value="Razão 3:" />
-                                <p:inputText value="#{teste.r3}" style="font-family:Agency FB; width:250px; font-size:18px;" required="true"></p:inputText>                                                        
+                                <h:outputText value="#{teste.r3}" style="font-family:Agency FB; width:250px; font-size:18px;" />                                                                                  
                             </p:panelGrid>
 
                             <p:panelGrid columns="1" layout="grid" styleClass="ui-panelgrid-blank">
@@ -58,10 +58,10 @@
                         <br/>  
                         <p:separator/>                        
 
-                        <p:commandButton style="background-color:green; color: #FFFFFF; font-family:Agency FB; font-size:18px;"
+                        <p:commandButton style="background-color:green; color: #FFFFFF; font-family:Agency FB; font-size:18px; margin-left:20px;"
                                          value="Calcular" action="#{teste.calcular()}" update="pnlPrincipal" />                        
 
-                         <p:commandButton style="background:#4682B4; color: #FFFFFF; font-family:Agency FB; font-size:18px;"
+                         <p:commandButton style="background:#4682B4; color: #FFFFFF; font-family:Agency FB; font-size:18px; margin-left:20px;"
                                          value="Atualizar" action="#{teste.atualizar()}" ajax="false" />                      
                     </div>
                 </h:form>

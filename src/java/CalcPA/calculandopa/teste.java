@@ -87,8 +87,10 @@ public class teste {
 
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Favor insira dados validos!", ""));
 
-        } else if (r1 != 0 && r2 != 0 && r3 != 0 && n != 0) {
+        } else if (r1 != 0 && r2 != 0 && n != 0) {
 
+            setR3((r2 - r1) + r2);                        
+                                
             r = r2 - r1;
 
             getR1();
