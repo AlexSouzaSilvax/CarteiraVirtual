@@ -34,9 +34,11 @@
                             <p:submenu label="Cadastros" icon="ui-icon-pencil">
                                 <p:menuitem value="Usuarios" action="#{usuario.cadastroUsuarios()}" icon="ui-icon-person" ajax="false" />
                                 <p:menuitem value="Clientes" action="#{usuario.cadastroClientes()}" icon="ui-icon-person" ajax="false" />                                
-                            </p:submenu>
+                            </p:submenu>                            
 
-                            <p:menuitem value="Relátorios" action="#{usuario.relatorio()}" icon="ui-icon-clipboard" ajax="false" />
+                            <p:submenu label="Relátorios" icon="ui-icon-clipboard">
+                                <p:menuitem value="Relátorios" action="#{usuario.relatorio()}" icon="ui-icon-clipboard" ajax="false" />
+                            </p:submenu>
 
                             <p:submenu label="Matemática" icon="ui-icon-calculator">
 
@@ -48,7 +50,7 @@
                                     <p:menuitem value="Calculando PG" action="#{usuario.calcPA()}" ajax="false" />                                    
                                 </p:submenu>                                                                
 
-                            </p:submenu>
+                            </p:submenu>                            
 
                             <p:menuitem value="Sair" action="#{usuario.sair()}" icon="ui-icon-closethick" ajax="false"/>
 

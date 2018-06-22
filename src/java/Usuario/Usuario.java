@@ -153,7 +153,7 @@ public class Usuario {
         return "TelaCadastroClientes";
     }
 
-    public String calcPA() {
+    public String calcPA() {        
         System.out.println("Tela de Calc PA chamada!");
         return "TelaCalcPA";
     }

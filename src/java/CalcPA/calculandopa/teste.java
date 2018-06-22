@@ -106,4 +106,13 @@ public class teste {
 
     }
 
+    public void atualizar() {
+
+        setR1(0);
+        setR2(0);
+        setR3(0);
+        setN(0);
+
+    }
+
 }

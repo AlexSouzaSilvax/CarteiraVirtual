@@ -60,10 +60,13 @@
 
                         <p:commandButton style="background-color:green; color: #FFFFFF; font-family:Agency FB; font-size:18px;"
                                          value="Calcular" action="#{teste.calcular()}" update="pnlPrincipal" />                        
+
+                         <p:commandButton style="background:#4682B4; color: #FFFFFF; font-family:Agency FB; font-size:18px;"
+                                         value="Atualizar" action="#{teste.atualizar()}" ajax="false" />                      
                     </div>
                 </h:form>
             </ui:define>
-            
+
         </ui:composition>
 
     </h:body>
