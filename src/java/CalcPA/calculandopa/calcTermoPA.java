@@ -83,8 +83,11 @@ public class calcTermoPA {
     public void calcular() {
         FacesContext context = FacesContext.getCurrentInstance();
 
+        System.out.println("Metodo calcular chamado!");
+        
         if (r1 == 0 && r2 == 0 && r3 == 0 && n == 0) {
 
+            System.out.println("Favor insira dados validos!");
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Favor insira dados validos!", ""));
 
         } else if (r1 != 0 && r2 != 0 && n != 0) {
@@ -99,10 +102,11 @@ public class calcTermoPA {
 
             aN = getR1() + (getN() - 1) * r;
 
+            System.out.println("Sucesso!");
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Sucesso!", ""));
 
         } else {
-
+            System.out.println("Favor insira dados validos!");
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Favor insira dados validos!", ""));
         }
 
