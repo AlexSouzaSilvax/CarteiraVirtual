@@ -5,7 +5,9 @@
  */
 package CalcPA.calculandopa;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.context.FacesContext;
 
 /**
  *
@@ -79,14 +81,28 @@ public class teste {
     }
 
     public void calcular() {
+        FacesContext context = FacesContext.getCurrentInstance();
 
-        r = r2 - r1;
+        if (r1 == 0 && r2 == 0 && r3 == 0 && n == 0) {
 
-        getR1();
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Favor insira dados validos!", ""));
 
-        getN();
+        } else if (r1 != 0 && r2 != 0 && r3 != 0 && n != 0) {
 
-        aN = getR1() + (getN() - 1) * r;
+            r = r2 - r1;
+
+            getR1();
+
+            getN();
+
+            aN = getR1() + (getN() - 1) * r;
+
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Sucesso!", ""));
+
+        } else {
+
+            context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Favor insira dados validos!", ""));
+        }
 
     }
 

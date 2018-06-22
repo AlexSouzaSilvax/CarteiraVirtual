@@ -39,10 +39,17 @@
                             <p:menuitem value="Relátorios" action="#{usuario.relatorio()}" icon="ui-icon-clipboard" ajax="false" />
 
                             <p:submenu label="Matemática" icon="ui-icon-calculator">
-                                <p:menuitem value="Calculando PA - Progressão Aritmética" action="#{usuario.calcPA()}" icon="ui-icon-calculator" ajax="false" />
-                                <p:menuitem value="Calculando PG - Progressão Geométrica" action="#{usuario.cadastroClientes()}" icon="ui-icon-calculator" ajax="false" />                                
+
+                                <p:submenu label="Progressão Aritmética">
+                                    <p:menuitem value="Calculando PA" action="#{usuario.calcPA()}" ajax="false" />                                    
+                                </p:submenu>                               
+
+                                <p:submenu label="Progressão Geométrica">
+                                    <p:menuitem value="Calculando PG" action="#{usuario.calcPA()}" ajax="false" />                                    
+                                </p:submenu>                                                                
+
                             </p:submenu>
-                            
+
                             <p:menuitem value="Sair" action="#{usuario.sair()}" icon="ui-icon-closethick" ajax="false"/>
 
                         </p:menubar>
