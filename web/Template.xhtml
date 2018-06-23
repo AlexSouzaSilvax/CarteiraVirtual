@@ -22,6 +22,8 @@
                             <h:commandLink action="#{usuario.principal()}">
                                 <p:graphicImage class="logo" value="img/logo_CV.png" ></p:graphicImage> 
                             </h:commandLink>
+
+
                         </h:form>
                     </div>
 
@@ -29,36 +31,39 @@
                         <p:growl id="messages"/>
                         <p:menubar>
 
-                            <p:menuitem value="Home" action="#{usuario.principal()}" icon="ui-icon-home" ajax="false" />
+                            <p:menuitem style="font-family:Agency FB; font-size:19px;" value="Home" action="#{usuario.principal()}" icon="ui-icon-home" ajax="false" />
 
-                            <p:submenu label="Cadastros" icon="ui-icon-pencil">
-                                <p:menuitem value="Usuarios" action="#{usuario.cadastroUsuarios()}" icon="ui-icon-person" ajax="false" />
-                                <p:menuitem value="Clientes" action="#{usuario.cadastroClientes()}" icon="ui-icon-person" ajax="false" />                                
+                            <p:submenu style="font-family:Agency FB; font-size:19px;" label="Cadastros" icon="ui-icon-pencil">
+                                <p:menuitem style="font-family:Agency FB; font-size:19px;" value="Usuarios" action="#{usuario.cadastroUsuarios()}" icon="ui-icon-person" ajax="false" />
+                                <p:menuitem style="font-family:Agency FB; font-size:19px;" value="Clientes" action="#{usuario.cadastroClientes()}" icon="ui-icon-person" ajax="false" />                                
                             </p:submenu>                            
 
-                            <p:submenu label="Relátorios" icon="ui-icon-clipboard">
-                                <p:menuitem value="Relátorios" action="#{usuario.relatorio()}" icon="ui-icon-clipboard" ajax="false" />
+                            <p:submenu style="font-family:Agency FB; font-size:19px;" label="Relátorios" icon="ui-icon-clipboard">
+                                <p:menuitem style="font-family:Agency FB; font-size:19px;" value="Relátorios" action="#{usuario.relatorio()}" icon="ui-icon-clipboard" ajax="false" />
                             </p:submenu>
 
-                            <p:submenu label="Matemática" icon="ui-icon-calculator">
+                            <p:submenu style="font-family:Agency FB; font-size:19px;" label="Matemática" icon="ui-icon-calculator">
 
-                                <p:submenu label="Progressão Aritmética">
-                                    <p:menuitem value="Calculando PA" action="#{usuario.calcPA()}" ajax="false" />                                    
+                                <p:submenu style="font-family:Agency FB; font-size:19px;" label="Progressão Aritmética">
+                                    <p:menuitem style="font-family:Agency FB; font-size:19px;" value="Calculando PA" action="#{usuario.calcPA()}" ajax="false" />                                    
                                 </p:submenu>                               
 
-                                <p:submenu label="Progressão Geométrica">
-                                    <p:menuitem value="Calculando PG" action="#{usuario.calcPG()}" ajax="false" />                                    
+                                <p:submenu style="font-family:Agency FB; font-size:19px;" label="Progressão Geométrica">
+                                    <p:menuitem style="font-family:Agency FB; font-size:19px;" value="Calculando PG" action="#{usuario.calcPG()}" ajax="false" />                                    
                                 </p:submenu>                                                                
 
                             </p:submenu>                            
 
-                            <p:menuitem value="Sair" action="#{usuario.sair()}" icon="ui-icon-closethick" ajax="false"/>
+                            <p:menuitem style="font-family:Agency FB; font-size:19px;" value="Sair" action="#{usuario.sair()}" icon="ui-icon-closethick" ajax="false"/>                             
 
-                        </p:menubar>
+                        </p:menubar>                        
                     </h:form>
 
                 </ui:insert>
             </div>
+
+            <!-- <p:menuitem style="font-family:Agency FB; font-size:19px; color:black; margin-left:1150px;" value="Seja Bem-Vindo : " onclick="false"></p:menuitem>
+                         <p:menuitem style="font-family:Agency FB; font-size:19px; color:crimson; margin-left:0px;" value="#{usuario.login}" onclick="false" ></p:menuitem> -->
 
             <!-- <div id="content" style="background:#EDEEE3;"> -->
             <div id="content">

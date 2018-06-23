@@ -167,4 +167,11 @@ public class Usuario {
         System.out.println("Tela Principal chamada!");
         return "TelaPrincipal";
     }
+
+    public String pegaLogin() {
+        System.out.println("Metodo pegaLogin chamado!");
+
+        String aquioLogin = getLogin();
+        return aquioLogin;
+    }
 }
