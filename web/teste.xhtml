@@ -7,12 +7,28 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Carteira Virtual</title>
-        <link href="telaPrincipal.css" rel="stylesheet"></link>
+        <link href="css_Tela_Login/teste.css" rel="stylesheet"></link>
 
     </h:head>
+    <h:body>
+        <div class="nav1">
+            <h:form>
+                <h:commandLink action="#{usuario.principal()}">
+                    <p:graphicImage class="logo" value="img/logo_CV.png" ></p:graphicImage> 
+                </h:commandLink>
+            </h:form>
+        </div>
 
-    <h:body class="telaPrincipal">
-  
+
+        <ui:composition template="Template.xhtml">
+
+            <ui:define name="content">
+                
+                <h2 style="margin-left:10px;">Tela de Testes</h2>  
+
+            </ui:define>
+
+        </ui:composition>            
 
     </h:body>
 </html>

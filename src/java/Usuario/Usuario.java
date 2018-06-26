@@ -138,6 +138,11 @@ public class Usuario {
         return "TelaLogin";
     }
 
+    public String teste() {
+        System.out.println("Tela teste chamada!");
+        return "teste";
+    }
+
     public String relatorio() {
         System.out.println("Tela de Relátorio chamada!");
         return "TelaRelatorios";

@@ -12,33 +12,32 @@ public class formulaTermoPG {
 
     public static void main(String[] args) {
 
-        /* Progama para fazer o caculo do valor de uma PA - Progressao Aritmetica, Matematica 2º Ensino Medio. 
+        /* Progama para fazer o caculo do valor de uma PG - Progressao Geometrica, Matematica 2º Ensino Medio. 
         
          Questao: 
         
-         ENCONTRE O CENTESIMO TERMO DA P.A (3,7,11): 
+         ENCONTRE O OITAVO TERMO DA P.G (4, 12, 36): 
         
-         r = Razao 
+         q = Razao 
          a1 = Primeiro termo
-         N = valor do centesimo termo
+         N = valor do oitavo termo
          aN = a1 + (n -1).r  -- Formula do termo geral de uma PA 
         
          */
-        int r = 4; // 7 - 3 = 4
+        double a1 = 4;
 
-        int a1 = 3;
+        double n = 8;
 
-        int n = 100;
+        double nn = (n - 1);
 
-        int aN = a1 + (n - 1) * r;
-//
-//        aN = a1 + aN * r;
-//
-//        aN = r + aN;
+        double q = 3;
+        
+        double qq = Math.pow(q,nn);
 
-        JOptionPane.showMessageDialog(
-                null, "Encontre o Centesimo Termo da P.A (3, 7, 11)\n"
-                + "O valor do centesimo termo é :  " + aN);
+        double aN = a1 * qq;
+
+        System.out.println("Encontre o OITAVO Termo da P.G (4, 12, 36)\n"
+                + "O valor do oitavo termo é :  " + aN);
 
     }
 }

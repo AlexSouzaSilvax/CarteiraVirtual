@@ -31,26 +31,28 @@
 
                             <p:panelGrid columns="1"> 
                                 <h:outputText style="font-family:Agency FB; font-size:18px;" value="Razão 1:" />
-                                <p:inputText value="#{teste.r1}" style="font-family:Agency FB; width:250px; font-size:18px;" required="true"></p:inputText>                                                        
+                                <p:inputText value="#{calcTermoPG.r1}" style="font-family:Agency FB; width:250px; font-size:18px;" required="true"></p:inputText>    
+
                                 <h:outputText style="font-family:Agency FB; font-size:18px;" value="Razão 2:" />
-                                <p:inputText value="#{teste.r2}" style="font-family:Agency FB; width:250px; font-size:18px;" required="true"></p:inputText>                                                        
+                                <p:inputText value="#{calcTermoPG.r2}" style="font-family:Agency FB; width:250px; font-size:18px;" required="true"></p:inputText>                                                        
+
                                 <h:outputText style="font-family:Agency FB; font-size:18px;" value="Razão 3:" />
-                                <h:outputText value="#{teste.r3}" style="font-family:Agency FB; width:250px; font-size:18px;" />                                                                                  
+                                <h:outputText value="#{calcTermoPG.r3}" style="font-family:Agency FB; width:250px; font-size:18px;" />                                                                                  
                             </p:panelGrid>
 
                             <p:panelGrid columns="1" layout="grid" styleClass="ui-panelgrid-blank">
                                 <h:outputText style="font-family:Agency FB; font-size:18px;" value="N - (Posiçao do Termo):" />
-                                <p:inputText id="n" value="#{teste.n}" style="font-family:Agency FB; font-size:18px; width:350px; font-size:18px;" required="true"></p:inputText>
+                                <p:inputText id="n" value="#{calcTermoPG.n}" style="font-family:Agency FB; font-size:18px; width:350px; font-size:18px;" required="true"></p:inputText>
                                 <p:message for="n" display="icon" />
 
-                                <h:outputText style="font-family:Agency FB; font-size:18px;" value="Razão da PG:" />
-                                <h:outputText id="r" value="#{teste.r}" style="font-family:Agency FB; font-size:22px; width:350px; color:black;" />
+                                <h:outputText style="font-family:Agency FB; font-size:18px;" value="Razão da PG: (q)" />
+                                <h:outputText id="r" value="#{calcTermoPG.q}" style="font-family:Agency FB; font-size:22px; width:350px; color:black;" />
 
                             </p:panelGrid>
 
                             <p:panelGrid columns="1">
-                                <h:outputText style="font-family:Agency FB; font-size:18px;" value="O valor do #{teste.getN()} º termo é :" />
-                                <h:outputText style="font-family:Agency FB; font-size:24px; color:black;" value="#{teste.getaN()}" />                                
+                                <h:outputText style="font-family:Agency FB; font-size:18px;" value="O valor do #{calcTermoPG.getN()} º termo é :" />
+                                <h:outputText style="font-family:Agency FB; font-size:24px; color:black;" value="#{calcTermoPG.getaN()}" />                                
                             </p:panelGrid>
 
                         </p:panelGrid>
@@ -59,10 +61,10 @@
                         <p:separator/>                        
 
                         <p:commandButton style="background-color:green; color: #FFFFFF; font-family:Agency FB; font-size:18px; margin-left:20px;"
-                                         value="Calcular" action="#{teste.calcular()}" update="pnlPrincipal" />                        
+                                         value="Calcular" action="#{calcTermoPG.calcular()}" update="pnlPrincipal" />                        
 
-                         <p:commandButton style="background:#4682B4; color: #FFFFFF; font-family:Agency FB; font-size:18px; margin-left:20px;"
-                                         value="Atualizar" action="#{teste.atualizar()}" ajax="false" />                      
+                        <p:commandButton style="background:#4682B4; color: #FFFFFF; font-family:Agency FB; font-size:18px; margin-left:20px;"
+                                         value="Atualizar" action="#{calcTermoPG.atualizar()}" ajax="false" />                      
                     </div>
                 </h:form>
             </ui:define>

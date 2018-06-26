@@ -16,67 +16,58 @@ import javax.faces.context.FacesContext;
 @ManagedBean
 public class calcTermoPG {
 
-    private int r1 = 0;
-    private int r2 = 0;
-    private int r3 = 0;
-    private int r = 0;
-    private int a1 = 0;
-    private int n = 0;
-    private int aN = 0;
+    private double r1;
+    private double r2;
+    private double r3;
+    private double q;
+    private double n;
+    private double aN;
 
-    public int getR1() {
+    public double getR1() {
         return r1;
     }
 
-    public void setR1(int r1) {
+    public void setR1(double r1) {
         this.r1 = r1;
     }
 
-    public int getR2() {
+    public double getR2() {
         return r2;
     }
 
-    public void setR2(int r2) {
+    public void setR2(double r2) {
         this.r2 = r2;
     }
 
-    public int getR3() {
+    public double getR3() {
         return r3;
     }
 
-    public void setR3(int r3) {
+    public void setR3(double r3) {
         this.r3 = r3;
     }
 
-    public int getR() {
-        return r;
+    public double getQ() {
+        return q;
     }
 
-    public void setR(int r) {
-        this.r = r;
+    public void setQ(double q) {
+        this.q = q;
     }
 
-    public int getA1() {
-        return a1;
-    }
-
-    public void setA1(int a1) {
-        this.a1 = a1;
-    }
-
-    public int getN() {
+    public double getN() {
         return n;
     }
 
-    public void setN(int n) {
+    public void setN(double n) {
         this.n = n;
     }
 
-    public int getaN() {
+    public double getaN() {
         return aN;
     }
 
-    public void setaN(int aN) {
+    public void setaN(double aN) {
         this.aN = aN;
     }
 
@@ -89,15 +80,19 @@ public class calcTermoPG {
 
         } else if (r1 != 0 && r2 != 0 && n != 0) {
 
-            setR3((r2 - r1) + r2);                        
-                                
-            r = r2 - r1;
+            setQ((r2 / r1));
+
+            setR3(r2 * q);
 
             getR1();
 
             getN();
 
-            aN = getR1() + (getN() - 1) * r;
+            double nn = (n - 1);
+
+            double qq = Math.pow(q, nn);
+
+            aN = r1 * qq;
 
             context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Sucesso!", ""));
 

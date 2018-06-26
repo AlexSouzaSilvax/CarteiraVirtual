@@ -84,7 +84,7 @@ public class calcTermoPA {
         FacesContext context = FacesContext.getCurrentInstance();
 
         System.out.println("Metodo calcular chamado!");
-        
+
         if (r1 == 0 && r2 == 0 && r3 == 0 && n == 0) {
 
             System.out.println("Favor insira dados validos!");
@@ -114,7 +114,7 @@ public class calcTermoPA {
 
     public void atualizar() {
         //FacesContext context = FacesContext.getCurrentInstance();
-
+        System.out.println("Meotodo atualizar chamado!");
         setR1(0);
         setR2(0);
         setR3(0);
