@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package CalcPA.calculandopa;
 
 import javax.faces.application.FacesMessage;
@@ -22,7 +17,7 @@ public class calcTermoPA {
     private int r = 0;
     private int a1 = 0;
     private int n = 0;
-    private int aN = 0;
+    private int aN = (int) 0;
 
     public int getR1() {
         return r1;
@@ -114,7 +109,7 @@ public class calcTermoPA {
 
     public void atualizar() {
         //FacesContext context = FacesContext.getCurrentInstance();
-        System.out.println("Meotodo atualizar chamado!");
+        System.out.println("Metodo atualizar chamado!");
         setR1(0);
         setR2(0);
         setR3(0);

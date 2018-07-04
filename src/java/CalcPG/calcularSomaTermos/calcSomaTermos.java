@@ -12,6 +12,7 @@ public class calcSomaTermos {
 
     public static void main(String[] args) {
 
+        /*
         int a1 = Integer.parseInt(JOptionPane.showInputDialog("Informe 1º Razao da P.A:"));
         int a2 = Integer.parseInt(JOptionPane.showInputDialog("Informe 2º Razao da P.A:"));
         int a3 = Integer.parseInt(JOptionPane.showInputDialog("Informe 3º Razao da P.A:"));
@@ -35,6 +36,10 @@ public class calcSomaTermos {
                 + "\nValor da Razao: " + r
                 + "\nPosiçao do Termo: " + n
                 + "\nA soma dos " + n + "º Primeiros Termos é : " + sN);
-
+*/
+        double n1 = 2;
+        double n2 = 19;
+        double aa = Math.pow(n1,n2);
+        System.out.println(aa);
     }
 }

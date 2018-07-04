@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package CalcPG.calculandopg;
 
 import javax.faces.application.FacesMessage;
@@ -16,62 +11,63 @@ import javax.faces.context.FacesContext;
 @ManagedBean
 public class calcTermoPG {
 
-    private double r1;
-    private double r2;
-    private double r3;
-    private double q;
-    private double n;
-    private double aN;
+    private int r1;
+    private int r2;
+    private int r3;
+    private int q;
+    private int n;
+    private int aN;
 
-    public double getR1() {
+    public int getR1() {
         return r1;
     }
 
-    public void setR1(double r1) {
+    public void setR1(int r1) {
         this.r1 = r1;
     }
 
-    public double getR2() {
+    public int getR2() {
         return r2;
     }
 
-    public void setR2(double r2) {
+    public void setR2(int r2) {
         this.r2 = r2;
     }
 
-    public double getR3() {
+    public int getR3() {
         return r3;
     }
 
-    public void setR3(double r3) {
+    public void setR3(int r3) {
         this.r3 = r3;
     }
 
-    public double getQ() {
+    public int getQ() {
         return q;
     }
 
-    public void setQ(double q) {
+    public void setQ(int q) {
         this.q = q;
     }
 
-    public double getN() {
+    public int getN() {
         return n;
     }
 
-    public void setN(double n) {
+    public void setN(int n) {
         this.n = n;
     }
 
-    public double getaN() {
+    public int getaN() {
         return aN;
     }
 
-    public void setaN(double aN) {
+    public void setaN(int aN) {
         this.aN = aN;
     }
 
     public void calcular() {
+        
         FacesContext context = FacesContext.getCurrentInstance();
 
         if (r1 == 0 && r2 == 0 && r3 == 0 && n == 0) {
@@ -88,9 +84,9 @@ public class calcTermoPG {
 
             getN();
 
-            double nn = (n - 1);
+            int nn = (n - 1);
 
-            double qq = Math.pow(q, nn);
+            int qq = (int) Math.pow(q, nn);
 
             aN = r1 * qq;
 
