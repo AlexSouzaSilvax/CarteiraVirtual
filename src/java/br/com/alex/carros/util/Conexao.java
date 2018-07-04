@@ -1,4 +1,4 @@
-package Util;
+package br.com.alex.carros.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
